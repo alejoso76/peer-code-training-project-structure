@@ -64,7 +64,7 @@ class Mundialitis:
     def create_lobby(self):
         """Function that creates a new lobby for trivia
         """
-        new_lobby = 'RPA Lobby 12'
+        new_lobby = 'RPA Lobby 0022'
         act_on_element('//a[@href="/trivialobbies"]', 'click_element')
         act_on_element('//button[text()="CREAR LOBBY"]', 'click_element')
         self.browser.input_text_when_element_is_visible(
@@ -85,7 +85,7 @@ class Mundialitis:
         self.browser.go_to(self.mundialitis_url)
 
         self.browser.input_text_when_element_is_visible(
-            '//input[@id="rusername"]', 'testusercito1234')
+            '//input[@id="rusername"]', 'testusercito12345')
         password = 'test_password'
         self.browser.input_text_when_element_is_visible(
             '//input[@id="rpassword"]', password)
