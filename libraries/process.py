@@ -25,8 +25,11 @@ class Process:
         }
         # Blank browser
         # chrome esta molestando
+        # browser.open_available_browser(
+        #     preferences=prefs, browser_selection=['firefox'])
+
         browser.open_available_browser(
-            preferences=prefs, browser_selection=['firefox'])
+            preferences=prefs)
 
         # browser.open_available_browser(
         #     preferences=prefs)
